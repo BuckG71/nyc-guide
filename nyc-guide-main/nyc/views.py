@@ -23,4 +23,9 @@ class ActivityView(View):
 
 
 class VenueView(View):
-    pass
+    def get(self, request, borough):
+        return render(
+            request=request,
+            template_name='borough.html',
+            context={'venue': borough, 'venues': boroughs[borough].keys()},
+        )
