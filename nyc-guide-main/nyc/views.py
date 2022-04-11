@@ -31,3 +31,5 @@ class ActivityView(View):
 class VenueView(View):
     pass
     
+
+    
