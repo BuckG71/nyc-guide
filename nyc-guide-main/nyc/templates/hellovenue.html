@@ -1,0 +1,13 @@
+<h1>{{ activity | title }}</h1>
+<h3>Description</h3>
+
+{{ venue }}
+    
+<p> 
+    <b>Click the Button below to return Home!</b>
+    </p>
+    
+    <form action = "{% url 'city' %}">
+        <input type = "submit" value = "Home">
+    </form>
+

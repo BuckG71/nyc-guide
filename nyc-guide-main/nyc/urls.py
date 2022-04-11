@@ -2,6 +2,8 @@ from django.urls import path
 
 from nyc.views import CityView, BoroughView, ActivityView, VenueView
 
+
+#create a separate url for the cityview, the boroughview, the activityview, and the venueview
 urlpatterns = [
     # all the urls are for free
     path('', CityView.as_view(), name='city'),
