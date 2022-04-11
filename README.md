@@ -5,8 +5,8 @@ A Django app that provides the user with information about NYC’s five boroughs
 In NYC the five boroughs have various activities and venues. Their descriptions are listed in the app. You will have the opportunity to visit each borough individually and also start over, in case you want to view the activites and the descriptions again.
 
 ## **Contributors:**
-name and github id
-name 2
+Bryan Garrett, github id BuckG71
+Manuela Farhi, github id 1mfarhi
 
 ## **How To View The App**
 
