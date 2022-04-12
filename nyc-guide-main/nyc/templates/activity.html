@@ -1,18 +1,19 @@
-#Give your activity page a title
+<!-- Give your activity page a title -->
 <h1>{{ activity | title }}</h1>
 
-#make an unordered list of the activities, you will need the venues to create the activities.
-# use a for loop for the venue in venues and give the venue a title
-# end your for loop before you exit the list
-
+<!-- make an unordered list of the activities, you will need the venues to create the activities. -->
 <ul>
-    {% for venue in venues %}  # -first activity and on
+    <!-- use a for loop for the venue in venues and give the venue a title -->
+    {% for venue in venues %}  
+    <!-- first activity and on -->
     <li>
         <a href="{% url 'venue' borough activity venue %} "
-            >{{ venue|title }}</a
+        >{{ venue|title }}</a
         >
     </li>
+    <!-- end your for loop before you exit the list -->
     {% endfor %}
 </ul>
 
+<a href="{% url 'city' %}">Return to Home</a>
 

@@ -27,7 +27,7 @@ class ActivityView(View):
             context={'borough': borough, 'activities': boroughs[borough].keys(), 'activity': activity, 'venues':boroughs[borough][activity].keys()})
     
 
-
+# We are after the final link in the chain (i.e. - boroughs dictionary), so we can just use square brackets to access the value of the 'description' key within the nested dictionary
 class VenueView(View):
     def get(self, request, borough, activity, venue):
         return render(
