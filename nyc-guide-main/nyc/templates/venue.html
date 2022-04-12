@@ -1,7 +1,10 @@
+<!-- h1 accesses the VenueView context variables 'borough' and 'activity' to display the selected borough and activity -->
 <h1> {{ borough | title }} - {{ activity | title }} </h1>
+<!-- h2 accesses the VenueView context variable 'venue' to display the selected venue -->
 <h2> {{ venue|title }} </h2>
+<!-- h2 accesses the VenueView context variable 'description' to display the description text for the selected venue -->
 <p>
     {{ description }}
 </p>
-
-<a href="{% url 'city' %}">click here to return to the main page</a>
+<!-- link back to home page -->
+<a href="{% url 'city' %}">Return to Home</a>
